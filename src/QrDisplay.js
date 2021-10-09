@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import "./QrDisplay.css";
-import Axios from "./Axios";
 
 function QrDisplay() {
-
-    let qrCode = null;
 
 
     const [rawText, setRawText] = useState('');

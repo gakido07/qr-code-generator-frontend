@@ -1,0 +1,35 @@
+.footer{
+    height: 5.5em;
+    color: rgb(133, 133, 113);
+    text-align: center;
+}
+
+.footer_content{
+    display: flex;
+    width: 10%;
+    margin: auto;
+    margin-top: 8em;
+}
+
+
+.footer_icon{
+    margin-top: 1.1em;
+    margin-right: 3%;
+}
+
+@media only screen and (max-width: 1000px){
+    .footer_content{
+        width: 18%;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 480px){
+
+    .footer_content{
+        width: 35%;
+    }
+
+}

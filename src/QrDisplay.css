@@ -5,6 +5,15 @@
     height: fit-content;
 }
 
+@keyframes animateSpinner {
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .qr_image_container{
     width: 30%;
     height: 25em;
@@ -21,8 +30,21 @@
 
 
 .input_box_container{
-    margin-top: 5em;
+    margin-top: 2em;
     display: block;
+}
+
+.input_box_container svg{
+    margin-bottom: 2em;
+    color: rgb(92, 107, 112);
+    font-size: 25px;
+}
+
+.input_box_container .svg_spinner.spinning{
+    animation-name: animateSpinner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
 }
 
 

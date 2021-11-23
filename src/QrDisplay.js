@@ -1,7 +1,8 @@
+import React, { useState } from 'react';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
-import "./QrDisplay.css";
+import styled from 'styled-components';
+// import "./QrDisplay.css";
 
 function QrDisplay() {
 
@@ -29,8 +30,8 @@ function QrDisplay() {
 
 
     return (
-        <div className="qr_display">
-            <div className="qr_image_container">
+        <QrDisplayStyled>
+<div className="qr_image_container">
                 {
                     rawText? (
                 <a download href={`${baseURL}/newQrCode/?barcode=${rawText}`}
@@ -66,8 +67,109 @@ function QrDisplay() {
                 </input>
                 </div>
             </div>  
-        </div>
+            </QrDisplayStyled>
     )
 }
 
 export default QrDisplay
+
+
+const QrDisplayStyled = styled.div`
+    width: 100%;
+    display: block;
+    padding-top: 2em;
+    height: fit-content;
+
+    @keyframes animateSpinner {
+        from{
+            transform: none;
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    .qr_image_container{
+        width: 15em;
+        height: 15em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: auto;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+
+    .hint{ 
+        padding-top: 40%;
+        color: rgb(133, 129, 124);
+    }
+    
+    
+    .input_box_container{
+        margin-top: 1em;
+        display: block;
+    }
+    
+    .input_box_container svg{
+        margin-bottom: 1em;
+        color: rgb(92, 107, 112);
+        font-size: 25px;
+    }
+    
+    .input_box_container .svg_spinner.spinning{
+        animation-name: animateSpinner;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+    }
+    
+    
+    .input_box_container input{
+        height: 5em;
+        border-radius: 10px;
+        outline: none;
+        width: 20%;
+        border: none;
+        background-color: rgb(189, 189, 189);
+        padding-left: 5%;
+    }
+    
+    
+    .hidden{
+        display: none;
+    }
+    
+    
+    .show{
+        display: block;
+        margin: auto;
+    }
+    
+    
+    
+    @media only screen and (max-width: 1000px){
+    
+        .qr_image_container{
+            width: 50%;
+        }
+    
+        .input_box_container input{
+            width: 70%;
+        }
+    
+    }
+    
+    
+    @media only screen and (max-width: 480px){
+    
+        .qr_image_container{
+            width: 15em;
+        }
+    
+    
+        .input_box_container input{
+            width: 80%;        
+        }
+    
+    }
+`;

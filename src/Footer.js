@@ -11,8 +11,7 @@ function Footer() {
     return (
         <FooterStyled>
             <div className="footer_content">
-            <FontAwesomeIcon className="footer_icon" icon={faCopyright}/>
-            <p>{`Daniel Ekara ${date.getFullYear()}`}</p>
+            <p>{`${date.getFullYear()}`}</p>
             </div>    
         </FooterStyled>
     )
@@ -20,7 +19,7 @@ function Footer() {
 
 
 const FooterStyled = styled.footer`
-    height: 7em;
+    height: 5em;
     color: rgb(255, 255, 255);
     background-color: rgb(92, 107, 112);
     text-align: center;
@@ -28,17 +27,11 @@ const FooterStyled = styled.footer`
     font-size: 12px;
 
 
-.footer_content{
-    display: flex;
-    width: 10%;
-    margin: auto;
-}
+    .footer_content{
+        width: 100%;
+        text-align: center;
+    }
 
-
-.footer_icon{
-    margin-top: 1.1em;
-    margin-right: 3%;
-}
 
 @media only screen and (max-width: 1000px){
     .footer_content{
@@ -51,6 +44,11 @@ const FooterStyled = styled.footer`
     .footer_content{
         width: 35%;
         margin-left: 40%;
+
+
+        p{
+            margin-right: 40%;
+        }
     }
 
 }

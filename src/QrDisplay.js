@@ -79,6 +79,7 @@ const QrDisplayStyled = styled.div`
     display: block;
     padding-top: 2em;
     height: fit-content;
+    min-height: 25em;
 
     @keyframes animateSpinner {
         from{
@@ -132,6 +133,7 @@ const QrDisplayStyled = styled.div`
         border: none;
         background-color: rgb(189, 189, 189);
         padding-left: 5%;
+        padding-right: 5%;
     }
     
     
@@ -161,14 +163,18 @@ const QrDisplayStyled = styled.div`
     
     
     @media only screen and (max-width: 480px){
-    
+        height: 27em;
+        margin-top: 4em;
+
         .qr_image_container{
             width: 15em;
+            height: 50%;
         }
     
     
         .input_box_container input{
-            width: 80%;        
+            width: 80%;
+            height: 9em;
         }
     
     }

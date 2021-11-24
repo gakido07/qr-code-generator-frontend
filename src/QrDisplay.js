@@ -150,6 +150,7 @@ const QrDisplayStyled = styled.div`
     
     
     @media only screen and (max-width: 1000px){
+        height: 62vh;
         .qr_image_container{
             width: 50%;
         }

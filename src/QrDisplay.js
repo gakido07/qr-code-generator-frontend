@@ -77,9 +77,9 @@ export default QrDisplay
 const QrDisplayStyled = styled.div`
     width: 100%;
     display: block;
-    padding-top: 2em;
+    padding-top: 4em;
     height: fit-content;
-    min-height: 25em;
+    min-height: 67vh;
 
     @keyframes animateSpinner {
         from{
@@ -150,7 +150,6 @@ const QrDisplayStyled = styled.div`
     
     
     @media only screen and (max-width: 1000px){
-    
         .qr_image_container{
             width: 50%;
         }
@@ -163,18 +162,16 @@ const QrDisplayStyled = styled.div`
     
     
     @media only screen and (max-width: 480px){
-        height: 27em;
-        margin-top: 4em;
+       min-height: 55vh;
+        padding-top: 8em;
 
         .qr_image_container{
             width: 15em;
-            height: 50%;
         }
     
     
         .input_box_container input{
             width: 80%;
-            height: 9em;
         }
     
     }

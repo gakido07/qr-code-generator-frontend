@@ -22,13 +22,11 @@ function Header() {
 
 const HeaderStyled = styled.header`
     background: rgb(92, 107, 112);
-    margin-top: -1.5em;
-    height: 5em;
+    height: 15vh;
     text-align: left;
     color: white;
     display: flex;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    padding-top: 1em;
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 15px;
@@ -45,6 +43,12 @@ const HeaderStyled = styled.header`
         margin-top: 1em;
         font-size: 30px;
         margin-left: 1em;
+    }
+
+
+    @media only screen and (max-width: 480px){
+        height: 12vh;
+        font-size: 13px;
     }
 `
 

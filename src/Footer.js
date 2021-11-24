@@ -17,11 +17,11 @@ function Footer() {
 
 
 const FooterStyled = styled.footer`
-    height: 5em;
+    height: 5vh;
     color: rgb(255, 255, 255);
     background-color: rgb(92, 107, 112);
     text-align: center;
-    margin-top: 4em;
+    margin-top: 2em;
     font-size: 12px;
 
 

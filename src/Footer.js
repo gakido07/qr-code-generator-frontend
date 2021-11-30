@@ -17,7 +17,7 @@ function Footer() {
 
 
 const FooterStyled = styled.footer`
-    height: 5vh;
+    height: 4em;
     color: rgb(255, 255, 255);
     background-color: rgb(92, 107, 112);
     text-align: center;

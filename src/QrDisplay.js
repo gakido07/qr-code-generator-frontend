@@ -78,8 +78,7 @@ const QrDisplayStyled = styled.div`
     width: 100%;
     display: block;
     padding-top: 4em;
-    height: fit-content;
-    min-height: 67vh;
+    height: 25em;
 
     @keyframes animateSpinner {
         from{
@@ -99,12 +98,10 @@ const QrDisplayStyled = styled.div`
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
 
-
     .hint{ 
         padding-top: 40%;
         color: rgb(133, 129, 124);
     }
-    
     
     .input_box_container{
         margin-top: 1em;
@@ -124,7 +121,6 @@ const QrDisplayStyled = styled.div`
         animation-delay: 0s;
     }
     
-    
     .input_box_container input{
         height: 5em;
         border-radius: 10px;
@@ -136,21 +132,17 @@ const QrDisplayStyled = styled.div`
         padding-right: 5%;
     }
     
-    
     .hidden{
         display: none;
     }
-    
     
     .show{
         display: block;
         margin: auto;
     }
     
-    
-    
     @media only screen and (max-width: 1000px){
-        height: 62vh;
+        height: 30%;
         .qr_image_container{
             width: 50%;
         }
@@ -163,17 +155,15 @@ const QrDisplayStyled = styled.div`
     
     
     @media only screen and (max-width: 480px){
-       min-height: 55vh;
+        height: 30em;
         padding-top: 8em;
 
         .qr_image_container{
             width: 15em;
         }
     
-    
         .input_box_container input{
             width: 80%;
         }
-    
     }
 `;

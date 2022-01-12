@@ -17,15 +17,12 @@ function Footer() {
 
 
 const FooterStyled = styled.footer`
-    height: 4em;
+    height: 7em;
     color: rgb(255, 255, 255);
-    width: 100%;
     background-color: rgb(92, 107, 112);
     text-align: center;
     margin-top: 2em;
     font-size: 12px;
-    position: absolute;
-    bottom: 0;
 
 
     .footer_content{
@@ -34,11 +31,7 @@ const FooterStyled = styled.footer`
     }
 
 
-@media only screen and (max-width: 1000px){
-    .footer_content{
-        width: 18%;
-    }
-}
+
 
 @media only screen and (max-width: 480px){
 

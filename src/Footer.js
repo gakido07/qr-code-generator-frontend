@@ -19,10 +19,13 @@ function Footer() {
 const FooterStyled = styled.footer`
     height: 4em;
     color: rgb(255, 255, 255);
+    width: 100%;
     background-color: rgb(92, 107, 112);
     text-align: center;
     margin-top: 2em;
     font-size: 12px;
+    position: absolute;
+    bottom: 0;
 
 
     .footer_content{

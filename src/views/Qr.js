@@ -155,6 +155,7 @@ export const StyledQr = styled(motion.div)`
 
         .image-container {
             width: 70%;
+            height: 17rem;
         }
 
         .form-container {

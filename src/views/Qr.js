@@ -42,7 +42,11 @@ export default function Qr () {
         >
             <div className="image-container">
                 { error && <div>Error occured</div> }
-                { loadedImage && <img download alt="lol" src={`data:image/jpeg;charset=utf-8;base64,${loadedImage}`} /> }
+                { loadedImage && 
+                <a download href={`data:image/jpeg;charset=utf-8;base64,${loadedImage}`}>
+                    <img download alt="lol" src={`data:image/jpeg;charset=utf-8;base64,${loadedImage}`} /> 
+                </a>
+                }
             </div>
             <div className="form-container">
                 <form>

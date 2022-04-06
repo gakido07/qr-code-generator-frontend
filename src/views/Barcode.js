@@ -47,7 +47,11 @@ export default function Barcode () {
         >
             <div className="image-container">
                 { error && <div>Invalid input</div> }
-                { loadedImage && <img alt="lol" download src={`data:image/jpeg;charset=utf-8;base64,${loadedImage}`} /> }
+                { loadedImage &&
+                <a download href={`data:image/jpeg;charset=utf-8;base64,${loadedImage}`}>
+                    <img alt="lol" download src={`data:image/jpeg;charset=utf-8;base64,${loadedImage}`} /> 
+                </a> 
+                }
             </div>
             <div className="form-container">
                 <form>

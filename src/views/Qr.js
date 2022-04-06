@@ -89,7 +89,7 @@ export const StyledQr = styled(motion.div)`
         margin-bottom: 5vh;
         position: relative;
 
-        >img {
+        img {
             width: 100%;
             height: 100%;
         }

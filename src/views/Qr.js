@@ -79,6 +79,7 @@ export const StyledQr = styled(motion.div)`
     .image-container {
         height: 20rem;
         display: flex;
+        overflow: hidden;
         justify-content: center;
         align-items: center;
         box-shadow: inset 0 0 0 2px ${props => props.theme.border};

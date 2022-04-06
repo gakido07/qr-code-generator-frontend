@@ -78,6 +78,7 @@ export const StyledQr = styled(motion.div)`
         justify-content: center;
         align-items: center;
         box-shadow: inset 0 0 0 2px ${props => props.theme.border};
+        border: 2px solid ${props => props.theme.animatedBorder};
         width: 25%;
         margin: auto;
         margin-top: 7vh;
@@ -87,28 +88,6 @@ export const StyledQr = styled(motion.div)`
         >img {
             width: 100%;
             height: 100%;
-        }
-
-        &:after, &:before {
-		    content: '';
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    bottom: 0;
-		    right: 0;
-		    border: 2px solid ${props => props.theme.animatedBorder};
-		    transition: transform .2s; 
-        }
-	    &:after {
-            transform: translate(3px, 3px);
-        }
-	    &:before {
-		    transform: translate(-3px, -3px);
-        }
-	    &:hover {
-            &:after, &:before {
-                transform: translate(0);
-            }
         }
     }
 

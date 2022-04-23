@@ -25,6 +25,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Qr Code Generator</title>
+    <script>
+      const viewport = document.querySelector("meta[name=viewport]");
+      viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
